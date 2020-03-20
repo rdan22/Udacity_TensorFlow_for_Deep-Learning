@@ -1,7 +1,7 @@
 # Udacity_TensorFlow_for_Deep-Learning
 Code for Udacity's Intro to TensorFlow for Deep Learning
 
-Fashion-MNIST Neural Network:
+## Fashion-MNIST Neural Network:
 
 ![Fashion-MNIST Network](https://github.com/rdan22/Udacity_TensorFlow_for_Deep-Learning/blob/master/Fashion-MNIST-Network.png)
 
@@ -12,7 +12,7 @@ Finally, the output layer, our last layer, contains 10 units, because the MNIST 
 
 We take it one step further by utilizing a Convolutional Neural Network. Convolutional layers can be added to the neural network model using the Conv2D layer type in Keras. This layer is similar to the Dense layer, and has weights and biases that need to be tuned to the right values. The Conv2D layer also has kernels (filters) whose values need to be tuned as well. So, in a Conv2D layer the values inside the filter matrix are the variables that get tuned in order to produce the right output.
 
-Going further with CNN's - Cats and Dogs:
+## Going further with CNN's - Cats and Dogs:
 
 What about datasets that contain color images? Computers interpret color images as 3-dimensional arrays, like so:
 
