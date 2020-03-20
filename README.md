@@ -17,3 +17,5 @@ Going further with CNN's - Cats and Dogs:
 What about datasets that contain color images? Computers interpret color images as 3-dimensional arrays, like so:
 
 ![Color Image](https://github.com/rdan22/Udacity_TensorFlow_for_Deep-Learning/blob/master/colorimage.png)
+
+Most color images can be represented by 3 color channels: Red, Green, and Blue (RGB images). In RGB images, each color channel is represented by its own 2-dimensional array. In the case of RGB images, the depth of the 3-dimensional array is 3. 
