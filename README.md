@@ -19,3 +19,5 @@ What about datasets that contain color images? Computers interpret color images 
 ![Color Image](https://github.com/rdan22/Udacity_TensorFlow_for_Deep-Learning/blob/master/colorimage.png)
 
 Most color images can be represented by 3 color channels: Red, Green, and Blue (RGB images). In RGB images, each color channel is represented by its own 2-dimensional array. In the case of RGB images, the depth of the 3-dimensional array is 3. 
+
+Wouldn't it be great to use pre-trained neural networks and classify these images? This is the idea behind transfer learning. Essentially, we take a neural network that has been trained on a large dataset and apply it to one it has never seen before. We only need to change the last layer of the pre-trained model, the output layer, and freeze the model. 
