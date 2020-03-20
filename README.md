@@ -3,7 +3,7 @@ Code for Udacity's Intro to TensorFlow for Deep Learning
 
 Fashion-MNIST Neural Network:
 
-![Fashion-MNIST Network](master/Fashion-MNIST Network.png)
+![Fashion-MNIST Network](Fashion-MNIST Network.png)
 
 The input to our models is an array of length 784. Since our neural network takes in a vector as input, these 28x28 images are converted into a one-dimensional array of 28x28, or 784 units (flattening). 
 The input will be fully connected to the first dense layer of our network, where we've chosen to use 128 units. We use ReLU (Rectified Linear Unit), a mathematical function that gives our dense layer more power. 
