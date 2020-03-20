@@ -29,3 +29,7 @@ From stock prices to weather forecasts, **time series** are everywhere. But what
 ### Common Patterns:
 
 Many time series have common patterns. For example, they generally gradually drift up or down, which shows a **trend**. **Seasonality** occurs when patterns repeat at predictable intervals and particular peaks and troughs. Some time series have both trend and seasonality. On the other hand, some time series are completely unpredictable, producing **white noise**. The best we can do in this situation is identify the probability distribution and find its parameters. 
+
+#### Note: 
+
+Since neural networks rely on _stochasticity_ (i.e. randomness) to initialize their parameters and gradient descent selects random batches of training data at each iteration, is perfectly normal if the outputs you see when you run the code are slightly different each time.
