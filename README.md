@@ -1,5 +1,5 @@
 # Udacity_TensorFlow_for_Deep-Learning
-Code for Udacity's Intro to TensorFlow for Deep Learning
+Udacity's Intro to TensorFlow for Deep Learning Course
 
 ## Fashion-MNIST Neural Network:
 
