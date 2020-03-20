@@ -11,3 +11,9 @@ The ReLU function gives an output of 0 if the input is negative or zero, and if 
 Finally, the output layer, our last layer, contains 10 units, because the MNIST dataset contains 10 different types of clothing. Each of these 10 output values will specify the probability that the images are that specific type of clothing( i.e., the confidence of the model). We use the softmax statement, a function that provides probabilities for each possible output class. 
 
 We take it one step further by utilizing a Convolutional Neural Network. Convolutional layers can be added to the neural network model using the Conv2D layer type in Keras. This layer is similar to the Dense layer, and has weights and biases that need to be tuned to the right values. The Conv2D layer also has kernels (filters) whose values need to be tuned as well. So, in a Conv2D layer the values inside the filter matrix are the variables that get tuned in order to produce the right output.
+
+Going further with CNN's - Cats and Dogs:
+
+What about datasets that contain color images? Computers interpret color images as 3-dimensional arrays, like so:
+
+![Color Image](https://github.com/rdan22/Udacity_TensorFlow_for_Deep-Learning/blob/master/colorimage.png)
