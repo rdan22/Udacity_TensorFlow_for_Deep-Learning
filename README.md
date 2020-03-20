@@ -21,3 +21,11 @@ What about datasets that contain color images? Computers interpret color images 
 Most color images can be represented by 3 color channels: Red, Green, and Blue (RGB images). In RGB images, each color channel is represented by its own 2-dimensional array. In the case of RGB images, the depth of the 3-dimensional array is 3. 
 
 Wouldn't it be great to use pre-trained neural networks and classify these images? This is the idea behind **Transfer learning**. Essentially, we take a neural network that has been trained on a large dataset and apply it to one it has never seen before. We only need to change the last layer of the pre-trained model, the output layer, and freeze the model. 
+
+## Time Series Forecasting with Deep Learning:
+
+From stock prices to weather forecasts, **time series** are everywhere. But what _is_ a time series? Time series is an ordered sequence of values usually equally spaced over time every year, day, second, etc. Time series where there is a single value at each time step are called **univariate**. Time series with multiple values at each time step are called **multivariate**. Time series analysis has many applications, particularly in forecasting, which is essentially predicting the future. 
+
+### Common Patterns:
+
+Many time series have common patterns. For example, they generally gradually drift up or down, which shows a **trend**. **Seasonality** occurs when patterns repeat at predictable intervals and particular peaks and troughs. Some time series have both trend and seasonality. On the other hand, some time series are completely unpredictable, producing **white noise**. The best we can do in this situation is identify the probability distribution and find its parameters. This is a good start. 
