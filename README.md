@@ -36,4 +36,4 @@ When you're doing time series forecasting or analysis, it helps to be able to di
 
 #### Note: 
 
-Since neural networks rely on _stochasticity_ (i.e. randomness) to initialize their parameters and gradient descent selects random batches of training data at each iteration, is perfectly normal if the outputs you see when you run the code are slightly different each time.
+Since neural networks rely on _stochasticity_ (i.e. randomness) to initialize their parameters and gradient descent selects random batches of training data at each iteration, it's perfectly normal if the outputs you see when you run the code are slightly different each time.
