@@ -28,7 +28,11 @@ From stock prices to weather forecasts, **time series** are everywhere. But what
 
 ### Common Patterns:
 
-Many time series have common patterns. For example, they generally gradually drift up or down, which shows a **trend**. **Seasonality** occurs when patterns repeat at predictable intervals and particular peaks and troughs. Some time series have both trend and seasonality. On the other hand, some time series are completely unpredictable, producing **white noise**. The best we can do in this situation is identify the probability distribution and find its parameters. 
+Many time series have common patterns. For example, they generally gradually drift up or down, which shows a **trend**. **Seasonality** occurs when patterns repeat at predictable intervals and particular peaks and troughs. Some time series have both trend and seasonality. On the other hand, some time series are completely unpredictable, producing **white noise**. The best we can do in this situation is identify the probability distribution and find its parameters. Combining these three results in a time series like this:
+
+![Time Series](https://github.com/rdan22/Udacity_TensorFlow_for_Deep-Learning/blob/master/commonPatterns.png)
+
+When you're doing time series forecasting or analysis, it helps to be able to dissect each aspect to study them separately. 
 
 #### Note: 
 
