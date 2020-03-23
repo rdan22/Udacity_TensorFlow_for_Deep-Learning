@@ -47,7 +47,7 @@ But up to this point, we haven't talked about Machine Learning. A simple approac
 
 ### Recurrent Neural Networks
 
-An RNN is a neural network that contains recurrent layers, and a recurrent layer is a layer that that can sequentially process a sequence of inputs. A recurrent layer is composed of a single memory cell, which is used repeatedly to compute the outputs. A memory cell is basically a small neural network. As shown below, 
+An RNN is a neural network that contains recurrent layers, and a recurrent layer is a layer that that can sequentially process a sequence of inputs. A recurrent layer is composed of a single memory cell, which is used repeatedly to compute the outputs. A memory cell is basically a small neural network. As shown below, there are multiple cells, but it's actually the same cell reused multiple times by the layer. At each time step, the memory cell takes the value of the input sequence at that time step, starting with ![](https://latex.codecogs.com/gif.latex?X_0) then ![](https://latex.codecogs.com/gif.latex?X_1) and so on, and it produces the output for the current time step, starting with ![](https://latex.codecogs.com/gif.latex?%5Chat%7BY%7D_0) then ![](https://latex.codecogs.com/gif.latex?%5Chat%7BY%7D_1), and so on. 
 
 ![Recurrent Layer](https://github.com/rdan22/Udacity_TensorFlow_for_Deep-Learning/blob/master/recurrentlayer.png)
 
