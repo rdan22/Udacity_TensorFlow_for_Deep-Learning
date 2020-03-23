@@ -44,3 +44,10 @@ Once we have a model and period we can evaluate the model on, we need a **metric
 Another simple approach is **Moving Average**. This is just the mean of the past N values. This eliminates a lot of noise, but it does not anticipate trend or seasonality, so it ends up performing worse than naive forecasting. One way to combat this is to remove the trend and seasonality from the time series. For this, a simple technique is to use **differencing**. We study the difference between the value at time ![](https://latex.codecogs.com/gif.latex?t) and the value at time ![](https://latex.codecogs.com/gif.latex?t%20-%20u), where ![](https://latex.codecogs.com/gif.latex?u) is the value of a time step. This time series now has no trend nor seasonality. We get the forecasts from the differenced time series, so we need to add back the value at time ![](https://latex.codecogs.com/gif.latex?t%20-%20u). We can improve the forecasts by also removing the past noise using a moving average. 
 
 But up to this point, we haven't talked about Machine Learning. A simple approach is to build a model that will learn to forecast the next time step given a time window before it. 
+
+### Recurrent Neural Networks
+
+An RNN is a neural network that contains recurrent layers, and a recurrent layer is a layer that that can sequentially process a sequence of inputs. A recurrent layer is composed of a single memory cell, which is used repeatedly to compute the outputs. A memory cell is basically a small neural network. As shown below, 
+
+![Recurrent Layer](https://github.com/rdan22/Udacity_TensorFlow_for_Deep-Learning/blob/master/recurrentlayer.png)
+
