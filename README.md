@@ -59,3 +59,13 @@ We will not be using the ReLU activation function here; instead we'll be using t
 
 One of the reasons it is difficult to train an RNN is that it's equivalent to training a very deep neural network with one layer per time step. During training, once the loss has been computed, back propagation computes the gradients of the loss with regards to every trainable parameter in the neural network. To do so, it propagates the gradients backwards through the RNN. TensorFlow does this by unrolling the RNN through time and treating the resulting network as an irregular feed-forward network
 
+### Stateful vs. Stateless RNNs:
+
+If we want an RNN to learn longer patterns, then we have two options: (1) use larger windows, and (2) we train the RNNs completely differently. 
+
+Until now, we've trained the RNN using batches of windows sampled anywhere within the time series. For each window the RNN will run and make a prediction, but to do so, it will use an initial state of 0. Internally, it will update the state at each time step until it makes its predictions, and during training there will be a round of back propagation. After that, the RNN will drop the final state, and this is why we call it a **stateless RNN**, as at each training iteration it starts with a fresh "0" state and it drops the final state. Stateless RNNs are simple to use, but they cannot learn patterns longer than the length of the window. 
+
+So how does a **statefull RNN** work? The batches are no longer sampled randomly. The first batch is composed of a single window at the very beginning of the time series, starting with initial state 0. After making its predictions and gradually updating the state vector, there's a round of back propagation, but this time the final state vector is not dropped. It's preserved by the RNN for the next training batch, which is composed of a single window located immediately after the previous one, starting with final state of the previous training iteration. Once we reach the end of the time series, we get a final state vector, but at this point, we can reset the state and start over at the beginning. 
+
+Stateful RNNs are generally much less used than stateless RNNs, as back propagation does not always work and the training period will be much slower. On certain data sets, however, stateful RNNs prove to perform much better. 
+
