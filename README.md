@@ -55,3 +55,7 @@ As shown above, there are multiple cells, but it's actually the same cell reused
 
 We will not be using the ReLU activation function here; instead we'll be using the hyperbolic tangent function. The problem with using ReLU is that RNN's have a tendency to have unstable gradients. The gradients can vanish during training or they can explode, especially when using a function like ReLU, which is non-saturated (can grow arbitrarily large). The hyperbolic tangent function is a bit more stable since it will saturate. 
 
+#### Back Propagation Through Time:
+
+One of the reasons it is difficult to train an RNN is that it's equivalent to training a very deep neural network with one layer per time step. During training, once the loss has been computed, back propagation computes the gradients of the loss with regards to every trainable parameter in the neural network. To do so, it propagates the gradients backwards through the RNN. TensorFlow does this by unrolling the RNN through time and treating the resulting network as an irregular feed-forward network
+
