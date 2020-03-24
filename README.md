@@ -69,3 +69,8 @@ So how does a **statefull RNN** work? The batches are no longer sampled randomly
 
 Stateful RNNs are generally much less used than stateless RNNs, as back propagation does not always work and the training period will be much slower. On certain data sets, however, stateful RNNs prove to perform much better. 
 
+### LSTM Cells
+
+![LSTM Cell](https://github.com/rdan22/Udacity_TensorFlow_for_Deep-Learning/blob/master/lstmcell.png)
+
+LSTM (Long Short-Term Memory) cells
